@@ -1,0 +1,25 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "pretty-quick --staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Someway/demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Someway/demo/issues"
+  },
+  "homepage": "https://github.com/Someway/demo#readme",
+  "devDependencies": {
+    "prettier": "^1.15.2",
+    "pretty-quick": "^1.8.0"
+  }
+}
