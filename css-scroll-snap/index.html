@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>scroll-snap</title>
+    <style>
+      .gallery {
+        width: 440px;
+        margin: 0 auto;
+        scroll-snap-type: x mandatory;
+        overflow-x: scroll;
+        overflow-y: visible;
+        display: flex;
+        align-items: center;
+        height: 500px;
+        border: 1px solid #999;
+      }
+      .gallery div {
+        scroll-snap-align: center;
+        margin: 10px;
+        position: relative;
+      }
+      .gallery span {
+        display: block;
+        width: 400px;
+        height: 400px;
+        line-height: 400px;
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+      }
+      .gallery .item1 {
+        background: blue;
+      }
+      .gallery .item2 {
+        background: red;
+      }
+      .gallery .item3 {
+        background: greenyellow;
+      }
+      .gallery .item4 {
+        background: grey;
+      }
+      .gallery .item5 {
+        background: blue;
+      }
+      .gallery_scroller img {
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <div><span class="item1">span1</span></div>
+      <div><span class="item2">span2</span></div>
+      <div><span class="item3">span3</span></div>
+      <div><span class="item4">span4</span></div>
+      <div><span class="item5">span5</span></div>
+      <!--
+        <div><img src="https://placeimg.com/480/480/animals/grayscale" /></div>
+        <div><img src="https://placeimg.com/360/480/animals/grayscale" /></div>
+        <div><img src="https://placeimg.com/640/480/animals/grayscale" /></div>
+        <div><img src="https://placeimg.com/360/360/animals/grayscale" /></div>
+        <div>
+          <img src="https://placeimg.com/2560/960/animals/grayscale" />
+          <div class="note">
+            Image is larger than container so it can be panned freely.
+          </div>
+        </div>
+        <div><img src="https://placeimg.com/480/480/animals/grayscale" /></div>
+        <div><img src="https://placeimg.com/360/360/animals/grayscale" /></div>
+        <div><img src="https://placeimg.com/640/480/animals/grayscale" /></div>
+      -->
+    </div>
+  </body>
+</html>
